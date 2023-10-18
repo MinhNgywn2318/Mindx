@@ -1,0 +1,152 @@
+/* Thiết lập màu nền và màu chữ chính cho trang web */
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url(/Demo/pics/v960-ning-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    }
+/* Chỉnh màu chữ phần placeholder */
+::placeholder{
+    color: #fefbfb;
+}
+/* Loại bỏ viền input */
+input:focus{
+    outline: none;
+    border: solid transparent;
+}
+/* Định dạng nút "X" trong trường nhập liệu */
+input::-webkit-search-cancel-button {
+    appearance: none;
+    background-image: url(/Demo/pics/FFC7EA.svg); 
+    background-size: 70px 70px; 
+    margin: -20px;
+    width: 70px; 
+    height: 70px;
+    cursor: pointer;
+    border: none; 
+}
+/* Chỉnh sửa hình ảnh phần heading và tạo flexbox*/
+.designTop{
+    display:flex;
+    font-family: 'Lobster', cursive;
+    color: #fefbfb; 
+    font-weight: bold;
+    font-size: 25px ;
+    justify-content: flex-end;
+    white-space: nowrap;
+    margin-top: -30px;
+    box-sizing: content-box;
+}
+/* Chỉnh sửa ô input trên head */
+.designTop .search input{
+    font-family: 'Lobster', cursive;
+    color: #fefbfb;
+    background-color: transparent;
+    width: 500px;
+    height: 37px ;
+    font-size: 25px;
+    border: dashed;
+}
+/* Chỉnh khoảng cách giữa các div trên head */
+.designTop .search button, .designTop .contact, .designTop .signUp{
+    margin: 20px;
+}
+/* Dùng hover cho heading */
+.designTop .contact:hover, .designTop .signUp:hover {
+    color: #D8B4F8;
+    transition: transform 1s; 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* Chỉnh sửa thanh search thành flexbox */
+.designTop .search {
+    display: flex; 
+    align-items: center;
+    box-sizing: content-box;
+}
+ /*Chỉnh sửa nút button */
+ .designTop .search button{
+    border: 0;
+    box-sizing: content-box;
+    background: none;
+ }
+ /* Set ảnh nút button */
+ .designTop .search button .imgButton {
+    background-image: url("/Demo/pics/Kính%20lúp.svg");
+    background-position: center;
+    background-size: 150px 150px;
+    width: 35px; 
+    height: 35px;
+    box-sizing: content-box;
+    cursor: pointer;    
+ }
+ .designBody{
+    display: flex;
+    font-family: 'Lobster', cursive;
+    color: #fefbfb; 
+    font-weight: bold;
+    justify-items: flex-end;
+    font-size: 25px ;
+    white-space: nowrap;
+    box-sizing: content-box;
+ }
+/* Chỉnh sửa hình ảnh phần body */
+.designBody .pic1{
+    display: flex;
+    position: relative;
+    background-image: url(/Demo/pics/pic1.png);
+    background-repeat: no-repeat;
+    opacity: 40%;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    width: 600px; 
+    height: 600px; 
+    color: #fff; /* Màu chữ */
+    font-size: 24px; /* Kích thước chữ */
+    box-sizing: content-box;
+}
+.designBody .pic1 .shopNow{
+    position: absolute;
+    bottom: 50px;
+    left: 160px;
+    right: 160px;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: #ff005d; /* Đặt màu nền cho khung */
+    border-radius: 9px;
+}
+.designBody .pic1 .content {
+    background-image: url(/Demo/pics/hag.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 570px;
+
+}
+.designBody .body1{
+    display: flex;
+    flex-direction: column;
+}
+.designBody .body1 .pic2{
+    position: relative;
+    background-image: url(/Demo/pics/shop.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    width: 900px;
+    height: 600px;
+    margin-top: -140px;
+}
+.designBody .body1 .welcome p{
+    position: relative;
+    top: -200px;
+    max-width: 100px;
+    max-height: 200px;
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}

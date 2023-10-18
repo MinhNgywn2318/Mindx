@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 200vh;
+}
+.parent{
+  height: 70px;
+  width: 100vw;
+  background-color: red;
+  position: fixed;
+  z-index: 10;
+}
+.child{
+  color: black;
+  display: inline;
+  margin: 10px;
+}
+.d-flex{
+  background-color: pink;
+  display: flex;
+  height: 400px;
+  gap: 20px;
+}
+
+.flex-item{
+  color: white;
+  border-radius: 50%;
+  background: black;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child:hover, .flex-item:hover{
+  width: 200px;
+  height: 200px;
+}
+.btn-back{
+  text-decoration: none;
+  padding: 8px;
+  position: fixed;
+  border-radius: 10px;
+  background-color: cadetblue;
+  right: 10px;
+  bottom: 30px;
+}
